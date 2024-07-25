@@ -1,0 +1,65 @@
+﻿@model User2ViewModel
+<form method="post">
+    <div>
+        <label class="form-label" asp-for="FullName"></label>
+        <input class="form-control" asp-for="FullName" value="Payam Shariati" />
+    </div>
+    <div class="my-3">
+        <label class="form-label" asp-for="Cars"></label>
+    </div>
+    <div>
+        <div class="mb-3 row border border-1 border-secondary p-3 rounded-2">
+            <div class="col-6">
+                <label class="form-label">Name</label>
+                <input class="form-control" name="Cars[0].Name" value="Benz"/>
+            </div>
+            <div class="col-6">
+                <label class="form-label">Color</label>
+                <input class="col-6 form-control" name="Cars[0].Color" value="Red" />
+            </div>
+        </div>
+        <div class="mb-3 row border border-1 border-secondary p-3 rounded-2">
+            <div class="col-6">
+                <label class="form-label">Name</label>
+                <input class="form-control" name="Cars[1].Name" value="Benz" />
+            </div>
+            <div class="col-6">
+                <label class="form-label">Color</label>
+                <input class="col-6 form-control" name="Cars[1].Color" value="Red" />
+            </div>
+        </div>
+        <div class="mb-3 row border border-1 border-secondary p-3 rounded-2">
+            <div class="col-6">
+                <label class="form-label">Name</label>
+                <input class="form-control" name="Cars[2].Name" value="Benz" />
+            </div>
+            <div class="col-6">
+                <label class="form-label">Color</label>
+                <input class="col-6 form-control" name="Cars[2].Color" value="Green" />
+            </div>
+        </div>
+        <div class="mb-3 row border border-1 border-secondary p-3 rounded-2">
+            <div class="col-6">
+                <label class="form-label">Name</label>
+                <input class="form-control" name="Cars[3].Name" value="Tesla" />
+            </div>
+            <div class="col-6">
+                <label class="form-label">Color</label>
+                <input class="col-6 form-control" name="Cars[3].Color" value="White" />
+            </div>
+        </div>
+        <div class="mb-3 row border border-1 border-secondary p-3 rounded-2">
+            <div class="col-6">
+                <label class="form-label">Name</label>
+                <input class="form-control" name="Cars[4].Name" value="Benz" />
+            </div>
+            <div class="col-6">
+                <label class="form-label">Color</label>
+                <input class="col-6 form-control" name="Cars[4].Color" value="Red" />
+            </div>
+        </div>
+    </div>
+    <div class="mt-3">
+        <button class="btn btn-primary">Submit</button>
+    </div>
+</form>

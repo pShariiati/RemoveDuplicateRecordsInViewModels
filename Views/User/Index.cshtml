@@ -1,0 +1,19 @@
+﻿@model UserViewModel
+<form method="post">
+    <div>
+        <label class="form-label" asp-for="FullName"></label>
+        <input class="form-control" asp-for="FullName" value="Payam Shariati" />
+    </div>
+    <div class="my-3">
+        <label class="form-label" asp-for="Cars"></label>
+    </div>
+    <div>
+        <input class="form-control mb-3" asp-for="Cars" value="Benz" />
+        <input class="form-control mb-3" asp-for="Cars" value="BMW" />
+        <input class="form-control mb-3" asp-for="Cars" value="Tesla" />
+        <input class="form-control mb-3" asp-for="Cars" value="BMW" />
+    </div>
+    <div class="mt-3">
+        <button class="btn btn-primary">Submit</button>
+    </div>
+</form>
